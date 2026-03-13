@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
-<title>ENCAPASO SAC | Ingeniería y Seguridad</title>
+<title>HISOLTEC SAC | Ingeniería y Seguridad</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<link rel="icon" href="favicon.png" type="image/png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_hst.png">
 
 <style>
 
-/* ===== BASE ===== */
-
-html{
-scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth;}
 
 body{
 margin:0;
@@ -24,82 +22,47 @@ background:#f5f7fa;
 color:#333;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 
 nav{
-
 position:fixed;
 top:0;
 width:100%;
-
 background:#f1f3f6;
-
 border-bottom:1px solid #e2e6ea;
-
 z-index:1000;
-
 }
 
 .nav-container{
-
 max-width:1200px;
-
 margin:auto;
-
 display:flex;
-
 align-items:center;
-
 justify-content:space-between;
-
 flex-wrap:wrap;
-
 padding:10px 25px;
-
 }
-
-/* LOGO */
 
 .logo img{
-
 height:70px;
 width:auto;
-
+object-fit:contain;
 }
 
-/* MENU */
-
 .menu{
-
 display:flex;
-
 flex-wrap:wrap;
-
 justify-content:center;
-
 }
 
 .menu a{
-
 text-decoration:none;
-
 color:#444;
-
 font-weight:600;
-
 margin:10px 15px;
-
-transition:.3s;
-
 }
 
-.menu a:hover{
-
-color:#0077cc;
-
-}
-
-/* ===== HEADER ===== */
+/* HEADER */
 
 header{
 
@@ -108,197 +71,174 @@ margin-top:90px;
 height:100vh;
 
 background:
-
 linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-
 url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc");
 
 background-size:cover;
-
 background-position:center;
 
 display:flex;
-
 flex-direction:column;
-
 justify-content:center;
-
 align-items:center;
 
-text-align:center;
-
 color:white;
+text-align:center;
 
 }
 
 header h1{
-
 font-size:55px;
-
 margin:0;
-
 }
 
 header p{
-
 font-size:22px;
-
 margin-top:10px;
-
 }
 
-/* ===== SECTIONS ===== */
+/* SECTIONS */
 
 section{
-
 padding:90px 8%;
-
 }
 
 h2{
-
 text-align:center;
-
-margin-bottom:50px;
-
+margin-bottom:40px;
 color:#0b1d2a;
-
 }
 
-/* ===== CARDS ===== */
+/* SERVICIOS */
 
 .cards{
-
 display:grid;
-
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
 gap:30px;
-
 }
 
 .card{
-
 background:white;
-
 padding:30px;
-
 border-radius:12px;
-
 box-shadow:0 8px 20px rgba(0,0,0,0.08);
-
-transition:.4s;
-
 }
 
-.card:hover{
-
-transform:translateY(-6px);
-
-}
-
-/* ===== MISION ===== */
+/* MISION */
 
 .mision{
-
 display:grid;
-
 grid-template-columns:1fr 1fr;
-
 gap:30px;
-
 }
 
-.box{
+/* CONTACTO GRID */
 
-background:white;
-
-padding:35px;
-
-border-radius:12px;
-
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
-
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:40px;
+align-items:start;
 }
 
-/* ===== CONTACTO ===== */
-
-.contact{
-
-background:#0b1d2a;
-
-color:white;
-
-padding:60px;
-
-border-radius:12px;
-
+.contact-info{
 text-align:center;
+}
+
+.logo-contact{
+width:220px;
+margin-bottom:20px;
+}
+
+/* FORMULARIO */
+
+.contact-form{
+background:white;
+padding:35px;
+border-radius:10px;
+box-shadow:0 8px 25px rgba(0,0,0,0.12);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+
+width:100%;
+padding:12px;
+margin-bottom:12px;
+
+border-radius:6px;
+border:1px solid #ccc;
+
+font-size:15px;
 
 }
 
-/* ===== FOOTER ===== */
+.form-row{
+display:flex;
+gap:10px;
+}
+
+.contact-form button{
+
+width:100%;
+background:#0077cc;
+color:white;
+border:none;
+padding:14px;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+
+}
+
+/* FOOTER */
 
 footer{
-
 background:#06131d;
-
 color:white;
-
 text-align:center;
-
 padding:25px;
-
 }
 
-/* ===== WHATSAPP ===== */
+/* WHATSAPP */
 
 .whatsapp{
 
 position:fixed;
-
 bottom:20px;
-
 right:20px;
 
 background:#25d366;
-
 color:white;
 
 width:60px;
-
 height:60px;
 
 border-radius:50%;
 
 display:flex;
-
 align-items:center;
-
 justify-content:center;
 
 font-size:30px;
 
-box-shadow:0 5px 15px rgba(0,0,0,.3);
-
-text-decoration:none;
-
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 
 @media (max-width:900px){
 
-.mision{
-
+.contact-grid{
 grid-template-columns:1fr;
-
 }
 
-header h1{
+.mision{
+grid-template-columns:1fr;
+}
 
-font-size:40px;
-
+.form-row{
+flex-direction:column;
 }
 
 }
@@ -306,59 +246,28 @@ font-size:40px;
 @media (max-width:600px){
 
 .nav-container{
-
 flex-direction:column;
 align-items:center;
 }
 
-.logo{
-width:100%;
-display:flex;
-justify-content:center;
-}
-  
 .menu{
-
 width:100%;
-
 justify-content:center;
-
-}
-
-.menu a{
-
-margin:8px;
-
+margin-top:10px;
 }
 
 .logo img{
-
 height:60px;
-
-}
-
-header{
-
-height:80vh;
-
+display: flex;
+justify-content: center;
 }
 
 header h1{
-
 font-size:32px;
-
 }
 
 header p{
-
 font-size:18px;
-
-}
-
-section{
-
-padding:70px 6%;
-
 }
 
 }
@@ -374,12 +283,11 @@ padding:70px 6%;
 <div class="nav-container">
 
 <div class="logo">
-<img src="Logo_isotipo1.png" alt="ENCAPASO SAC">
+<img src="Logo_isotipo1.png">
 </div>
 
 <div class="menu">
 
-<a href="#nosotros">Nosotros</a>
 <a href="#servicios">Servicios</a>
 <a href="#mision">Misión</a>
 <a href="#contacto">Contacto</a>
@@ -392,61 +300,35 @@ padding:70px 6%;
 
 <header>
 
-<h1>ENCAPASO SAC</h1>
-
+<h1>HISOLTEC SAC</h1>
 <p>Soluciones de Ingeniería, Automatización y Seguridad</p>
 
 </header>
 
-<section id="nosotros">
-
-<h2>Quiénes Somos</h2>
-
-<p style="text-align:center;max-width:900px;margin:auto;font-size:18px">
-
-Somos una empresa especializada en soluciones integrales de ingeniería, 
-enfocada en estructuras metálicas, automatización de accesos y sistemas 
-de seguridad electrónica. Nuestro compromiso es brindar calidad, 
-eficiencia y tecnología en cada proyecto.
-
-</p>
-
-</section>
-
 <section id="servicios">
 
-<h2>Servicios Profesionales</h2>
+<h2>Servicios</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Estructuras Metálicas</h3>
-<p>Fabricación e instalación profesional para proyectos industriales, comerciales y residenciales.</p>
+<p>Fabricación e instalación profesional.</p>
 </div>
 
 <div class="card">
 <h3>Automatización</h3>
-<p>Sistemas automáticos para puertas, rejas y accesos inteligentes.</p>
+<p>Automatización de accesos y puertas.</p>
 </div>
 
 <div class="card">
-<h3>Cámaras de Seguridad</h3>
-<p>Instalación, configuración y monitoreo remoto de videovigilancia.</p>
+<h3>Seguridad Electrónica</h3>
+<p>Sistemas de videovigilancia y monitoreo.</p>
 </div>
 
 <div class="card">
 <h3>Mantenimiento</h3>
-<p>Soporte técnico preventivo y correctivo para sistemas eléctricos y mecánicos.</p>
-</div>
-
-<div class="card">
-<h3>Proyectos de Ingeniería</h3>
-<p>Diseño y ejecución de soluciones técnicas personalizadas.</p>
-</div>
-
-<div class="card">
-<h3>Seguridad Integral</h3>
-<p>Protección tecnológica para hogares, negocios e industrias.</p>
+<p>Soporte técnico preventivo y correctivo.</p>
 </div>
 
 </div>
@@ -459,14 +341,14 @@ eficiencia y tecnología en cada proyecto.
 
 <div class="mision">
 
-<div class="box">
+<div class="card">
 <h3>Misión</h3>
-<p>Ofrecer soluciones tecnológicas confiables que superen las expectativas del cliente y contribuyan al desarrollo de infraestructura segura y moderna.</p>
+<p>Ofrecer soluciones tecnológicas confiables y eficientes.</p>
 </div>
 
-<div class="box">
+<div class="card">
 <h3>Visión</h3>
-<p>Ser líderes en innovación tecnológica e ingeniería aplicada, reconocidos por nuestra calidad y excelencia.</p>
+<p>Ser líderes en innovación tecnológica e ingeniería aplicada.</p>
 </div>
 
 </div>
@@ -477,37 +359,131 @@ eficiencia y tecnología en cada proyecto.
 
 <h2>Contacto</h2>
 
-<div class="contact">
+<div class="contact-grid">
 
-<p><b>Ubicación:</b> Calle José Boterin 583 - La Perla</p>
+<div class="contact-info">
 
-<p><b>Teléfono:</b> 904 932 031</p>
+<img src="Logo_isotipo1.png" class="logo-contact">
 
-<p><b>Email:</b> ventas@encapaso.site</p>
+<p>
+
+HISOLTEC SAC desarrolla soluciones en metalmecánica,
+automatización industrial y seguridad electrónica
+para hogares, empresas e industrias.
+
+</p>
+
+</div>
+
+<div>
+
+<p><b>Dirección</b><br>
+Calle José Boterin 583 - La Perla</p>
+
+<p><b>Teléfono</b><br>
+904 932 031</p>
+
+<p><b>Email</b><br>
+ventas@hisoltec.com</p>
+
+</div>
+
+<div class="contact-form">
+
+<form action="https://formspree.io/f/xxxxxabc" method="POST">
+
+<input type="text"
+name="nombre"
+placeholder="Nombre"
+required>
+
+<input type="email"
+name="correo"
+placeholder="Correo"
+pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+required>
+
+<input type="tel"
+name="celular"
+placeholder="Celular"
+pattern="9[0-9]{8}"
+maxlength="9"
+required>
+
+<input type="text"
+name="empresa"
+placeholder="Empresa">
+
+<div class="form-row">
+
+<input type="text"
+name="rubro"
+placeholder="Rubro empresarial">
+
+<input type="text"
+name="ruc"
+placeholder="RUC">
+
+</div>
+
+<label>Servicio</label>
+
+<select name="servicio" required>
+
+<option value="">Seleccione un servicio</option>
+
+<option value="Estructuras Metalicas">
+Estructuras Metálicas
+</option>
+
+<option value="Automatizacion">
+Automatización de accesos
+</option>
+
+<option value="Seguridad Electronica">
+Seguridad electrónica
+</option>
+
+<option value="Mantenimiento">
+Mantenimiento técnico
+</option>
+
+<option value="Ingenieria">
+Proyecto de ingeniería
+</option>
+
+</select>
+
+<textarea
+name="mensaje"
+placeholder="Mensaje"></textarea>
+
+<button type="submit">
+Enviar solicitud
+</button>
+
+</form>
+
+</div>
 
 </div>
 
 </section>
 
-<a class="whatsapp" href="https://wa.me/51973375140" target="_blank">
+<a class="whatsapp"
+href="https://wa.me/51973375140"
+target="_blank">
+
 <i class="fab fa-whatsapp"></i>
+
 </a>
 
 <footer>
 
-Copyright © 2026 - ENCAPASO SAC LIDER EN METALMECÁNICA Y AUTOMATIZACIÓN EN PERÚ
+Copyright © 2026 HISOLTEC SAC
 
 </footer>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
